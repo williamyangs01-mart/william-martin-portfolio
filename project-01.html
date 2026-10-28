@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Life Expectancy Analysis using WHO data, Python, exploratory data analysis, and regression modeling.">
+
+    <meta name="author" content="William Martin">
+
+    <title>Life Expectancy Analysis | William Martin</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation: mengikuti halaman Data Warehouse -->
+    <header class="navbar">
+        <a href="index.html" class="logo">WILLIAM<span>.</span></a>
+
+        <nav>
+            <a href="index.html#about">About</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+        
+
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle color theme">
+
+    <span class="theme-option theme-sun">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/>
+        </svg>
+    </span>
+
+    <span class="theme-option theme-moon">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.9 13A8.5 8.5 0 0 1 11 3.1 8.5 8.5 0 1 0 20.9 13Z"/>
+        </svg>
+    </span>
+
+</button>
+
+    </header>
+
+    <main>
+
+        <!-- Project Header -->
+        <section class="project-detail-hero">
+
+            <a href="index.html#projects" class="project-link back-link">
+                ← Back to Projects
+            </a>
+
+            <p class="eyebrow">PROJECT 01 · DATA MODELLING</p>
+
+            <h1>
+                Data Modelling
+                <span>Life Expectancy Analysis</span>
+            </h1>
+
+            <p class="project-detail-lead">
+                An analysis of the WHO Life Expectancy dataset using
+                exploratory data analysis, data preprocessing, and
+                regression models to investigate life expectancy
+                indicators and evaluate prediction performance.
+            </p>
+
+            <div class="details-tags">
+                <span>Python</span>
+                <span>Jupyter Notebook</span>
+                <span>Data Analysis</span>
+                <span>Machine Learning</span>
+            </div>
+
+        </section>
+
+
+        <!-- 01: Overview -->
+        <section class="project-detail-section">
+
+            <p class="details-number">01 / OVERVIEW</p>
+
+            <h2>Project Overview</h2>
+
+            <p>
+                This project investigates the WHO Life Expectancy
+                dataset to understand how health, education, and
+                socioeconomic indicators relate to life expectancy.
+                The analysis combines exploratory data analysis
+                with regression modeling to estimate life expectancy
+                and assess predictive performance.
+            </p>
+
+            <div class="project-info-grid">
+
+                <div class="project-info-card">
+                    <p class="info-label">PROJECT TYPE</p>
+                    <h3>Academic Project</h3>
+                </div>
+
+                <div class="project-info-card">
+                    <p class="info-label">MAIN FOCUS</p>
+                    <h3>Data Analysis & Regression</h3>
+                </div>
+
+                <div class="project-info-card">
+                    <p class="info-label">TOOLS</p>
+                    <h3>Python, Pandas, Scikit-learn</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 02: EDA -->
+        <section class="project-detail-section">
+
+            <p class="details-number">02 / EXPLORATORY DATA ANALYSIS</p>
+
+            <h2>Understanding the Data</h2>
+
+            <p>
+                Histograms and boxplots were used to examine
+                variable distributions and identify potential
+                outliers. This exploratory analysis helped
+                understand the dataset before preprocessing
+                and regression modeling.
+            </p>
+
+            <figure class="project-figure">
+                <img
+                    src="images/histogram.png"
+                    alt="Histogram showing the distribution of life expectancy"
+                    loading="lazy"
+                >
+
+                <figcaption>
+                    <h3>EDA — Histogram</h3>
+                    <p>
+                        This histogram illustrates the distribution
+                        of life expectancy values after data cleaning.
+                        It helps identify where observations are
+                        concentrated and how widely the values vary
+                        across the dataset.
+                    </p>
+                </figcaption>
+            </figure>
+
+        </section>
+
+
+        <!-- 03: Correlation Analysis -->
+        <section class="project-detail-section">
+
+            <p class="details-number">03 / CORRELATION ANALYSIS</p>
+
+            <h2>Relationships Between Indicators</h2>
+
+            <p>
+                Correlation analysis was used to examine how
+                life expectancy relates to health, education,
+                and socioeconomic indicators in the WHO dataset.
+            </p>
+
+            <figure class="project-figure">
+                <img
+                    src="images/Correlation Heatmap.png"
+                    alt="Correlation heatmap of life expectancy indicators"
+                    loading="lazy"
+                >
+
+                <figcaption>
+                    <h3>Correlation Heatmap</h3>
+                    <p>
+                        The heatmap highlights relationships between
+                        variables in the dataset. Schooling has a
+                        strong positive correlation with life
+                        expectancy (approximately 0.72), while Adult
+                        Mortality has a strong negative correlation
+                        (approximately -0.70). These relationships
+                        indicate that education and mortality are
+                        important indicators to investigate further.
+                    </p>
+                </figcaption>
+            </figure>
+
+        </section>
+
+
+        <!-- 04: Data Preprocessing -->
+        <section class="project-detail-section">
+
+            <p class="details-number">04 / DATA PREPROCESSING</p>
+
+            <h2>Preparing the Dataset</h2>
+
+            <p>
+                The preprocessing workflow included mean imputation
+                for missing numerical values, one-hot encoding for
+                categorical variables, and StandardScaler for
+                feature scaling before regression model evaluation.
+                These steps prepared the dataset for consistent
+                model training and evaluation.
+            </p>
+
+        </section>
+
+
+        <!-- 05: Modeling -->
+        <section class="project-detail-section">
+
+            <p class="details-number">05 / MODELING</p>
+
+            <h2>Regression Model Comparison</h2>
+
+            <p>
+                Linear Regression, Decision Tree Regressor, and
+                Random Forest Regressor were evaluated. A tuned
+                Random Forest model was also examined to compare
+                its performance with the baseline model.
+            </p>
+
+            <figure class="project-figure">
+                <img
+                    src="images/Model Performance Comparison.png"
+                    alt="Comparison of regression model performance"
+                    loading="lazy"
+                >
+
+                <figcaption>
+                    <h3>Model Performance Comparison</h3>
+                    <p>
+                        This visualization compares the performance
+                        of the regression models evaluated in the
+                        project. The comparison helps assess which
+                        approach predicts life expectancy most
+                        accurately based on the reported evaluation
+                        metrics.
+                    </p>
+                </figcaption>
+            </figure>
+
+        </section>
+
+
+        <!-- 06: Evaluation -->
+        <section class="project-detail-section">
+
+            <p class="details-number">06 / MODEL EVALUATION</p>
+
+            <h2>Actual vs. Predicted</h2>
+
+            <p>
+                Actual and predicted life expectancy values were
+                compared to evaluate how closely the model's
+                predictions matched the observed values.
+            </p>
+
+            <figure class="project-figure">
+                <img
+                    src="images/Actual vs. Predicted.png"
+                    alt="Actual versus predicted life expectancy values"
+                    loading="lazy"
+                >
+
+                <figcaption>
+                    <h3>Actual vs. Predicted</h3>
+                    <p>
+                        This plot compares the actual life expectancy
+                        values with the values predicted by the
+                        regression model. Points closer to the
+                        diagonal reference line indicate predictions
+                        that are closer to the observed values.
+                    </p>
+                </figcaption>
+            </figure>
+
+            <div class="project-info-grid">
+
+                <div class="project-info-card">
+                    <p class="info-label">MODEL</p>
+                    <h3>Baseline Random Forest</h3>
+                </div>
+
+                <div class="project-info-card">
+                    <p class="info-label">R-SQUARED</p>
+                    <h3>0.9546</h3>
+                </div>
+
+                <div class="project-info-card">
+                    <p class="info-label">MEAN ABSOLUTE ERROR</p>
+                    <h3>1.2913</h3>
+                </div>
+
+            </div>
+
+            <p>
+                The reported baseline Random Forest achieved an
+                R² score of 0.9546 and an MAE of 1.2913. The tuned
+                model achieved an R² score of 0.9544 and an MAE
+                of 1.3178, so the baseline performed slightly
+                better on these reported metrics.
+            </p>
+
+        </section>
+
+
+        <!-- 07: Conclusion -->
+        <section class="project-detail-section">
+
+            <p class="details-number">07 / CONCLUSION</p>
+
+            <h2>Key Takeaways</h2>
+
+            <p>
+                This project provided practical experience in
+                exploratory data analysis, data preprocessing,
+                visualization, and regression modeling. The results
+                demonstrate how machine learning can be applied
+                to investigate patterns in life expectancy data
+                and evaluate predictive performance.
+            </p>
+
+        </section>
+
+
+        <!-- Back to Projects -->
+        <section class="project-detail-footer">
+
+            <p class="eyebrow">MORE PROJECTS</p>
+
+            <h2>Explore More of My Work</h2>
+
+            <p>
+                Return to the portfolio to explore other academic
+                projects in data warehousing and data visualization.
+            </p>
+
+            <a href="index.html#projects" class="button primary">
+                ← Back to All Projects
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            © 2026 William Martin · Information Systems Portfolio
+        </p>
+    </footer>
+ <script src="script.js"></script>
+</body>
+</html>
+```
